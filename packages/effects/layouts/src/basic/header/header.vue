@@ -10,6 +10,7 @@ import { VbenFullScreen, VbenIconButton } from '@vben-core/shadcn-ui';
 
 import {
   AppClose,
+  AppDevTool,
   AppMaxmize,
   AppMinmize,
   GlobalSearch,
@@ -49,6 +50,7 @@ const rightSlots = computed(() => {
       { index: REFERENCE_VALUE + 110, name: 'app-minimize' },
       { index: REFERENCE_VALUE + 120, name: 'app-maximize' },
       { index: REFERENCE_VALUE + 120, name: 'app-close' },
+      { index: REFERENCE_VALUE + 120, name: 'app-devTool' },
     );
   }
   if (preferences.widget.globalSearch) {
@@ -184,6 +186,9 @@ function clearPreferencesAndLogout() {
         </template>
         <template v-else-if="slot.name === 'app-close'">
           <AppClose class="mr-1" />
+        </template>
+        <template v-else-if="slot.name === 'app-devTool'">
+          <AppDevTool class="mr-1" />
         </template>
       </slot>
     </template>

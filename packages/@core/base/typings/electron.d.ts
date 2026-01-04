@@ -2,6 +2,7 @@ import type { IpcRendererEvent } from 'electron';
 
 export type IpcRendererInvoke =
   | 'app-close'
+  | 'app-devTool'
   | 'app-maximize'
   | 'app-minimize'
   | 'is-maximized'

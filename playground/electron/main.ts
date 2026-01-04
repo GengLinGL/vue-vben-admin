@@ -183,6 +183,13 @@ ipcMain.handle('app-close', (event) => {
   }
 });
 
+ipcMain.handle('app-devTool', (event) => {
+  const browserWindow = BrowserWindow.fromWebContents(event.sender);
+  if (browserWindow) {
+    browserWindow.webContents.toggleDevTools();
+  }
+});
+
 ipcMain.handle('is-maximized', (event) => {
   const browserWindow = BrowserWindow.fromWebContents(event.sender);
   if (browserWindow) {

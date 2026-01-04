@@ -1,4 +1,5 @@
 export * from './app-close';
+export * from './app-devTool';
 export * from './app-maximize';
 export * from './app-minimize';
 export { default as Breadcrumb } from './breadcrumb.vue';

@@ -7,6 +7,7 @@ import { preferences } from '@vben/preferences';
 
 import {
   AppClose,
+  AppDevTool,
   AppMaxmize,
   AppMinmize,
   AuthenticationColorToggle,
@@ -54,6 +55,7 @@ const isElectron = window?.ipcRenderer !== undefined;
       <AppMinmize />
       <AppMaxmize />
       <AppClose />
+      <AppDevTool />
     </template>
   </div>
 </template>
