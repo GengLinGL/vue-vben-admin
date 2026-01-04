@@ -1,18 +1,18 @@
 {
   "name": "@vben/playground",
   "version": "5.5.6",
-  "homepage": "https://vben.pro",
-  "bugs": "https://github.com/vbenjs/vue-vben-admin/issues",
+  "homepage": "",
+  "bugs": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vbenjs/vue-vben-admin.git",
+    "url": "",
     "directory": "playground"
   },
   "license": "MIT",
   "author": {
     "name": "vben",
-    "email": "ann.vben@gmail.com",
-    "url": "https://github.com/anncwb"
+    "email": "",
+    "url": ""
   },
   "type": "module",
   "scripts": {
